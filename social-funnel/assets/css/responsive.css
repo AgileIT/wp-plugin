@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (max-width:479px){
+	.top_heading h1{font-size:25px;}
+	.banner_wrapper {
+	  margin: 20px 0 5px;
+	}
+	.in_title{font-size: 20px;    margin-bottom: 5px;}
+	
+	.download_y_btn{font-size: 19px; min-height: 63px;}
+	
+	.unlock_data_btn{  font-size: 12px; padding: 5px; text-align:center; line-height: 30px;}
+	.unlock_data_btn span {
+		  display: block;
+		  padding-right: 0;
+		  text-align: center;line-height: 0;
+		}
+	.support_btn{font-size: 12px; padding: 5px; text-align:center; line-height: 30px;}
+	.support_btn span{display: block;
+		  padding-right: 0;
+		  text-align: center;line-height: 0;}	
+	
+	.download_y_btn {
+	  font-size: 20px !important;
+	  padding: 20px 0 10px;
+	}  
+	.download_y_btn span {
+	  display: block;
+	  padding: 0;
+	  text-align: center;
+	}
+
+	
+	}
+
+@media (max-width:767px){
+	
+	.main_container{padding:0 20px;}
+	.social_share_box ul li a{margin-bottom:10px;}
+	.img_float_right{ float: none;margin-bottom: 15px; margin-left:0px;}
+	.img_float_left{ float: none;margin-bottom: 15px;}
+	.cont_sect h2{font-size: 20px;}
+	
+	.download_y_btn{ font-size:26px;}
+	
+}
+
+@media (min-width:768px) and (max-width:991px){
+	
+	
+	
+	}
+
+
+@media (min-width:992px) and (max-width:1199px){
+	
+	}

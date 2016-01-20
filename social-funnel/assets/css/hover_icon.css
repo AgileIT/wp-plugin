@@ -1,0 +1,6 @@
+a.toplevel_page_social-funnel .dashicons-admin-generic::before{
+	content:url("../images/gray.png");
+}
+#toplevel_page_social-funnel:hover a.toplevel_page_social-funnel .dashicons-admin-generic::before{
+	content:url("../images/blue1.png");
+}
