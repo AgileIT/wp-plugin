@@ -70,49 +70,6 @@ function sf_custom_image_sizes_choose( $sizes ) {
     return array_merge( $sizes, $custom_sizes );
 }
 
-/*function custom_remove_cpt_slug( $post_link, $post, $leavename ) {
-
-    if ( 'socialfunnel' != $post->post_type || 'publish' != $post->post_status ) {
-        return $post_link;
-    }
-
-    $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
-
-    return $post_link;
-}
-
-function custom_parse_request_tricksy( $query ) {
-
-    // Only noop the main query
-    if ( ! $query->is_main_query() )
-        return;
-
-    // Only noop our very specific rewrite rule match
-    if ( 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
-        return;
-    }
-
-    // 'name' will be set if post permalinks are just post_name, otherwise the page rule will match
-    if ( ! empty( $query->query['name'] ) ) {
-        $query->set( 'post_type', array( 'post', 'socialfunnel', 'page' ) );
-    }
-}*/
-/*
-if (  is_admin() ) {
-add_action( 'admin_init','wpse_60168_custom_menu_class' );
-}
-function wpse_60168_custom_menu_class() 
-{
-    global $menu;
-
-    foreach( $menu as $key => $value )
-    {
-        if( 'Social Funnels' == $value[0] )
-            $menu[$key][4] .= " social_icon_image";
-
-       
-    }
-}*/
 
 require_once('wp-updates-plugin.php');
 new WPUpdatesPluginUpdater_1116( 'http://wp-updates.com/api/2/plugin', plugin_basename(__FILE__));
@@ -269,17 +226,7 @@ function sf_activate(){
 					   PRIMARY KEY (`id`)
 					  ) $charset_collate;";
 
-	$clicks_table = "
-					CREATE TABLE IF NOT EXISTS $clicks (
-					`id` mediumint(9) NOT NULL AUTO_INCREMENT,
-					`camp_id` int(10) NOT NULL,
-					`slug` varchar(20) NOT NULL,
-					`clicks` int(20) NOT NULL,
-					`optins` int(20) NOT NULL,
-					`socail_clicks` int(20) NOT NULL,
-					`socail_optins` int(20) NOT NULL,
-					 PRIMARY KEY (`id`)
-					) $charset_collate;";
+/**/
 
 	$optins_table = "
 					CREATE TABLE IF NOT EXISTS $optins (
